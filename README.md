@@ -8,6 +8,6 @@ This project is based in the famous Tic Tac Toe Game, it was built in HTML, CSS 
 
 You can take a look at this project in [github](https://guacig.github.io/tic-tac-toe-game/)
 
-Also you can find the working demo in [codepen]()
+Also you can find the working demo in [codepen](https://codepen.io/GuaciG/full/rNMGxLy)
 
 Feedback issues etc. are more than welcome! Thanks!
