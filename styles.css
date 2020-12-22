@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kanit:wght@300;600&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  user-select: none;
+  height: 100%;
+}
+
+body {
+  background-color: #359191;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  color: #f2f2f2;
+  font-size: 34px;
+}
+
+/* Modal container */
+#modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+
+#modal .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #333;
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  min-width: 345px;
+  min-height: 345px;
+}
+
+#modal .wrapper h1 {
+  font-size: 95px;
+}
+
+#modal .wrapper p {
+  font-size: 50px;
+}
+
+#modal .wrapper span {
+  display: inline-block;
+  margin: 1vw 2vw;
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+#modal .wrapper span:hover {
+  color: #666;
+  cursor: pointer;
+}
+
+/* Game container */
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container #board {
+  width: 50vw;
+  height: 50vw;
+  max-width: 500px;
+  max-height: 500px;
+  min-width: 345px;
+  min-height: 345px;
+}
+
+#container #board #t2, #container #board #t8 {
+  border-width: 0 4px 0 4px;
+  border-color: white;
+  border-style: solid;
+}
+
+#container #board #t4, #container #board #t6 {
+  border-width: 4px 0 4px 0;
+  border-color: white;
+  border-style: solid;
+}
+
+#container #board #t5 {
+  border: 4px solid white;
+}
+
+#container #board .tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 33.333%;
+  height: 33.333%;
+  color: white;
+  font-family: 'Indie Flower', cursive;
+  cursor: pointer;
+}
+
+#container #board .tile.taken {
+  cursor: default;
+}
+
+.symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15vw;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  padding: 10px 0;
+  font-size: 12px;
+  color: #f2f2f2;
+}
+
+.footer a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #666;
+}
+
+@media only screen and (max-width: 600px) {
+  .symbol {
+    font-size: 135px;
+  }
+  #modal .wrapper h1 {
+    font-size: 55px;
+  }
+  #modal .wrapper p {
+    font-size: 35px;
+  }
+}
